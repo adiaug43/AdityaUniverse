@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/Style.css">
+  <link rel="shortcut icon" href="assets/images/logo/AUlogo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Aditya's Universe</title>
+</head>
+<body>
+  <!-- navbar
+  ----------------------------------- -->
+    <div class="navbar">
+        <p class="border"><a href="Index.html">home</a></p>
+        <p class="border"><a href="">about us</a></p>
+        <p class="border"><a href="Contect.html">contect us</a></p>
+        <p class="border"><a href="#">help</a></p>
+    </div>
+  <main>
+  <!-- secondPanel
+----------------------------------- -->
+    <div class="secondPanel">
+      <Style>
+        .secondPanel{
+          background-image: url('/assets/images/bg-image/more-items.jpg');
+        }
+      </Style>
+      <div class="profile-box">
+      <div class="logo-frame">
+        <img class="logo" src="assets/images/logo/AUlogo.png" alt="logo">
+      </div>
+      <div class="profile-name">
+        <h1 class="name">Aditya's Universe</h1>
+      <p class="handle">@adiaug</p>
+      </div>
+    </div>
+<!-- select item-type
+----------------------------------- -->
+    <div class="item-type-select">
+      <select id="myNavigation" onchange="goToPage()">
+        <option value="">-- select Type of Items --</option>
+        <option value="itemsBacket.html">ItemsBacket</option>
+        <option value="https://www.wikipedia.org">Wikipedia (Details)</option>
+        <option value="https://www.youtube.com">YouTube (Videos)</option>
+    </select>
+    </div>
+    </div>
+    <!-- script
+    ----------------------------------- -->
+    <script>
+        function goToPage() {
+            var dropdown = document.getElementById("myNavigation");
+            var destination = dropdown.value;
+
+            // Agar value khali nahi hai, to us link par bhej do
+            if (destination) {
+                window.location.href = destination;
+            }
+        }
+    </script>
+    <h2 id="favourite" class="header2">Favourite</h2>
+    <!-- Favourite Items
+    ----------------------------------- -->
+    <div class="favourite-items">
+      <!-- card 01
+      ----------------------------------- -->
+      <div class="card">
+        <div class="item-types">
+          <h2>electronics</h2>
+        </div>
+        <div class="image-container">
+          <!-- product1
+          ----------------------------------- -->
+          <div class="image-frame">
+            <a href="home-decoration-led-light.html" class="image-link" target="_blank">
+              <img src="assets/images/ihave/electronics/home-decoration-led-light/home-decoration-led-light.jpeg" alt="Item01">
+            </a>
+          </div>
+          <!-- product2
+          ----------------------------------- -->
+          <div class="image-frame">
+            <a href="bluetooth-headphone.html" class="image-link" target="_blank">
+              <img src="assets/images/ihave/electronics/bluetooth-headphone/bluetooth-headphone.jpeg" alt="Item02">
+            </a>
+          </div>
+          <!-- product3
+          ----------------------------------- -->
+          <div class="image-frame">
+            <a href="M01Details.html" class="image-link" target="_blank">
+              <img src="Backet/Electronics/img03.jpg" alt="Item03">
+            </a>
+          </div>
+          <!-- product4
+          ----------------------------------- -->
+          <div class="image-frame">
+            <a href="M01Details.html" class="image-link" target="_blank">
+              <img src="Backet/Electronics/img04.jpg" alt="Item04">
+            </a>
+          </div>
+        </div>
+        <!-- product5
+          ----------------------------------- -->
+        <div class="see-more">
+          <p><a href="#">SEE MORE ≫</a></p>
+        </div>
+      </div>
+      <!-- card 02
+      ----------------------------------- -->
+      <div class="card">
+        <div class="item-types">
+          <h2>lifestyle</h2>
+        </div>
+        <div class="image-container">
+          <div class="image-frame">
+      <a href="laptop-bag.html" class="image-link" target="_blank">
+        <img src="assets/images/ihave/lifestyle/laptop-bag/laptop-bag.jpeg" alt="Item01">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+      </a>
+    </div>
+        </div>
+        <div class="see-more">
+          <p><a href="#">SEE MORE ≫</a></p>
+        </div>
+      </div>
+      <!-- card 03
+      ----------------------------------- -->
+      <div class="card">
+        <div class="item-types">
+          <h2>Jar & Glass</h2>
+        </div>
+        <div class="image-container">
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img01.jpg" alt="Item01">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+      </a>
+    </div>
+        </div>
+        <div class="see-more">
+          <p><a href="#">SEE MORE ≫</a></p>
+        </div>
+      </div>
+      <!-- card 04
+      ----------------------------------- -->
+     <div class="card">
+        <div class="item-types">
+          <h2>Jar & Glass</h2>
+        </div>
+        <div class="image-container">
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img01.jpg" alt="Item01">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+      </a>
+    </div>
+          <div class="image-frame">
+      <a href="M01Details.html" class="image-link" target="_blank">
+        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+      </a>
+    </div>
+        </div>
+        <div class="see-more">
+          <p><a href="#">SEE MORE ≫</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer
+  ----------------------------------- -->
+  <footer class="footer">
+    <p> &#169; 2026 by Aditya's Universe 
+    <br>Thank &#9829 You</p>
+  </footer>
+</body>
+</html>
